@@ -2,6 +2,8 @@ import { Award, GraduationCap } from "lucide-react";
 
 const education = [
   { title: "LLB (In Progress)", school: "Regenesys Law School", period: "2023 – Present" },
+  { title: "Data Visualization Bootcamp", school: "BrightLearn", period: "" },
+  { title: "Career Boost Training · Power BI + AI", school: "Exodus Experts", period: "" },
   { title: "Conveyancing Practice & Finances", school: "South African Law School", period: "2022" },
   { title: "Paralegal Studies", school: "South African Law School", period: "2021" },
   { title: "National Higher Certificate · Economics & Finance", school: "Tshwane University of Technology", period: "2006 – 2008" },
