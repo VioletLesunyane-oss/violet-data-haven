@@ -9,6 +9,15 @@ const technical = [
   { name: "Dashboard Creation", level: 88 },
 ];
 
+const aiTools = [
+  "ChatGPT",
+  "Microsoft Copilot",
+  "Google Gemini",
+  "Power BI Copilot",
+  "Prompt Engineering",
+  "AI-Assisted Analysis",
+];
+
 const professional = [
   "Leadership",
   "Project Management",
@@ -76,6 +85,27 @@ export const Skills = () => {
             </div>
 
             <div className="mt-10 p-6 rounded-2xl bg-gradient-card border border-border">
+              <div className="flex items-center justify-between mb-4">
+                <div className="text-xs font-mono text-primary">AI-DRIVEN TOOLS</div>
+                <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-wider">Augmented workflow</span>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                Skilled in leveraging AI-driven platforms to accelerate research, automate repetitive analysis,
+                refine reporting, and surface insights faster — combining human judgement with machine intelligence.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {aiTools.map((t) => (
+                  <span
+                    key={t}
+                    className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-primary/10 text-primary border border-primary/20"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 p-6 rounded-2xl bg-gradient-card border border-border">
               <div className="text-xs font-mono text-primary mb-3">LANGUAGES</div>
               <div className="flex flex-wrap gap-6">
                 {["English", "Tswana", "Afrikaans"].map((l) => (
