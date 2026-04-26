@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Github, Menu, X } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
@@ -53,7 +53,16 @@ export const Navbar = () => {
           ))}
         </ul>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-3">
+          <a
+            href="https://github.com/VioletLesunyane-oss"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Github size={18} />
+          </a>
           <Button variant="hero" size="sm" asChild>
             <a href="#contact">Hire Me</a>
           </Button>

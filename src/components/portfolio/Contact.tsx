@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const contacts = [
   { icon: Mail, label: "Email", value: "mlesunyane@gmail.com", href: "mailto:mlesunyane@gmail.com" },
   { icon: Phone, label: "Phone", value: "+27 82 573 9477", href: "tel:+27825739477" },
   { icon: MapPin, label: "Location", value: "Midrand, South Africa" },
   { icon: Linkedin, label: "LinkedIn", value: "violet-lesunyane", href: "https://www.linkedin.com/in/violet-lesunyane-4a367658/" },
+  { icon: Github, label: "GitHub", value: "VioletLesunyane-oss", href: "https://github.com/VioletLesunyane-oss" },
 ];
 
 export const Contact = () => {
@@ -34,6 +35,11 @@ export const Contact = () => {
             <Button variant="outline-glow" size="lg" asChild>
               <a href="https://www.linkedin.com/in/violet-lesunyane-4a367658/" target="_blank" rel="noreferrer">
                 <Linkedin className="mr-2 h-4 w-4" /> Connect on LinkedIn
+              </a>
+            </Button>
+            <Button variant="outline-glow" size="lg" asChild>
+              <a href="https://github.com/VioletLesunyane-oss" target="_blank" rel="noreferrer">
+                <Github className="mr-2 h-4 w-4" /> View GitHub
               </a>
             </Button>
           </div>
