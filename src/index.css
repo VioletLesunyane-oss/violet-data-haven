@@ -126,3 +126,65 @@
 @keyframes grow-bar {
   from { width: 0; }
 }
+
+/* ===== Corporate (Slate + Teal) theme — scoped to /dashboard ===== */
+.theme-corporate {
+  --background: 215 32% 9%;
+  --foreground: 210 30% 94%;
+
+  --card: 215 28% 12%;
+  --card-foreground: 210 30% 94%;
+
+  --popover: 215 28% 12%;
+  --popover-foreground: 210 30% 94%;
+
+  --primary: 178 70% 45%;          /* Teal */
+  --primary-foreground: 215 40% 8%;
+  --primary-glow: 174 78% 55%;
+
+  --secondary: 210 25% 65%;        /* Slate */
+  --secondary-foreground: 215 40% 8%;
+
+  --muted: 215 22% 16%;
+  --muted-foreground: 215 15% 68%;
+
+  --accent: 178 70% 45%;
+  --accent-foreground: 215 40% 8%;
+
+  --destructive: 0 70% 55%;
+  --destructive-foreground: 210 30% 96%;
+
+  --border: 215 22% 20%;
+  --input: 215 22% 18%;
+  --ring: 178 70% 45%;
+
+  --gradient-hero:
+    radial-gradient(ellipse at top right, hsl(178 70% 45% / 0.12), transparent 55%),
+    radial-gradient(ellipse at bottom left, hsl(210 30% 50% / 0.10), transparent 50%),
+    linear-gradient(180deg, hsl(215 32% 10%), hsl(215 35% 7%));
+  --gradient-primary: linear-gradient(135deg, hsl(178 70% 42%), hsl(174 78% 55%));
+  --gradient-accent: linear-gradient(135deg, hsl(178 70% 45%), hsl(200 50% 60%));
+  --gradient-card: linear-gradient(160deg, hsl(215 28% 14%), hsl(215 32% 9%));
+
+  --shadow-glow: 0 0 60px hsl(178 70% 45% / 0.25);
+  --shadow-card: 0 20px 50px -20px hsl(215 60% 2% / 0.7);
+  --shadow-elegant: 0 30px 80px -30px hsl(178 70% 45% / 0.35);
+
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* Brushed-metal corporate texture */
+.bg-brushed {
+  background-image:
+    repeating-linear-gradient(90deg,
+      hsl(var(--foreground) / 0.025) 0 1px,
+      transparent 1px 3px),
+    linear-gradient(160deg, hsl(var(--card)), hsl(var(--background)));
+}
+.bg-blueprint {
+  background-image:
+    linear-gradient(hsl(var(--primary) / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--primary) / 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
