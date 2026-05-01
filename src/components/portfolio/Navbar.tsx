@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Github, Menu, X, BarChart3 } from "lucide-react";
+import { Github, Menu, X } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
@@ -55,12 +54,6 @@ export const Navbar = () => {
         </ul>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Link
-            to="/dashboard"
-            className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            <BarChart3 size={15} /> Dashboard
-          </Link>
           <a
             href="https://github.com/VioletLesunyane-oss"
             target="_blank"
@@ -98,13 +91,6 @@ export const Navbar = () => {
                 </a>
               </li>
             ))}
-            <Link
-              to="/dashboard"
-              onClick={() => setOpen(false)}
-              className="flex items-center gap-2 text-foreground/80 hover:text-primary"
-            >
-              <BarChart3 size={16} /> Live Dashboard
-            </Link>
             <Button variant="hero" asChild>
               <a href="#contact" onClick={() => setOpen(false)}>Hire Me</a>
             </Button>
