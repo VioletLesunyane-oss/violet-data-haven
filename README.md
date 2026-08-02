@@ -1,2 +1,2 @@
 PERSONAL PORTFOLIO WEBSITE
-PROJECT LINK: https://violet-data-haven.lovable.app
+PROJECT LINK: https://violet-visions-82.lovable.app
